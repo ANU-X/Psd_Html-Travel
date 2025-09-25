@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+#heros {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/hero.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-text h1 {
+  margin-top: 3rem;
+  margin-bottom: 0.6rem;
+  font-size: 26pt;
+}
+.line {
+  width: 7rem;
+  height: 3px;
+  background: red;
+  margin: 1px auto;
+}
+.hero-text button {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: #e70d56;
+}
+.hero-text button:hover {
+  background: white;
+}
+/* -------------------------------- */
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  color: white;
+}
+.navbar h1 {
+  font-family: "Dancing Script", cursive;
+  margin: 1rem;
+}
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem;
+}
+.actives {
+  list-style: none;
+  font-size: 14pt;
+  cursor: pointer;
+}
+.actives:hover {
+  color: #e70d56;
+}
+.navLink button {
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  background: #e70d56;
+  border: 2px solid #e70d56;
+  font-size: 12pt;
+  cursor: pointer;
+}
+.navLink button:hover {
+  background: white;
+  border: 2px solid #e70d56;
+}
+.hero-text {
+  text-align: center;
+  color: white;
+}
+ .manu-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+/*----------------------hero-------------------------*/
+
+#simple{
+  margin: 10rem auto;
+}
+
+.events_upcoms{
+  text-align: center;
+  color: #271f22;
+  margin-bottom: 6rem;
+}
+.events_upcoms h1{
+  font-family: "Dancing Script", cursive;
+  font-size: 36pt;
+}
+.linesr{
+  width: 10rem;
+  height: 3px;
+  background: red;
+  margin: 0.2rem auto;
+}
+.events-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.events_imgs{
+  width: 500px;
+  height: 400px;
+  margin-bottom: 3rem;
+}
+.events_imgs img{
+  transition: transform 6s;
+}
+
+.events-items img:hover{
+  transform: scale(1.05);
+}
+.events_imgs img{
+  width: 100%;
+}
+.events_text h2{
+  margin-top: 10px;
+  margin-bottom: 1.5rem;
+}
+.events_text p{
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.events_text button{
+  padding:0.6rem 1rem;
+  background: #e70d56;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid #e70d56;
+}
+.events_text button:hover{
+  border:2px solid #e70d56;
+  background: white;
+  color: #e70d56;
+  cursor: pointer;
+}
+/*---------------------------------------bannar------------*/
+#banner{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+}
+#banner::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  transition: opacity 2s ease;
+}
+#banner:hover::before{
+  opacity: 1;
+}
+
+
+.banner_text{
+      z-index: 1;
+}
+  .banner_text h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 36pt;
+    color: #ff96b9;
+  }
+
+.banner_line{
+  width: 8rem;
+  height: 3px;
+  background: red;
+  margin: 2px auto;
+  margin-bottom: 2rem;
+}
+
+.bannar_btn{
+  text-decoration: none;
+  color: white;
+  background: #e70d56;
+  padding: 0.5rem 1rem;
+  border: 2px solid #e70d56;
+  border-radius: 20px;
+  margin: 2rem;
+}
+.bannar_btn:hover{
+  border:2px solid #e70d56;
+  background: white;
+  color: #e70d56;
+  cursor: pointer;
+}
+/* ----------------------------------Future------------------- */
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 10rem auto;
+}
+.col-one p{
+  margin: 1rem auto;
+}
+.col-one button{
+  padding: 0.5rem 1rem;
+  border: 2px solid #e70d56;
+  background: #e70d56;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.col-one button:hover{
+  background: white;
+  color: #e70d56;
+  border: 2px solid #e70d56;
+}
+.col-one span{
+  font-family: "Dancing Script", cursive;
+  color: #e70d56;
+}
+.col-two{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.col-two div{
+  width: 220px;
+  height: 220px;
+}
+.col-two div img:hover{
+  transform: scale(1.06);
+}
+.col-two div img{
+  width: 100%;
+  height: 100%;
+  transition: 1s ease ;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/* responsive */
+@media only screen and (max-width: 885px) {
+
+  .navbar h1 {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: x-large;
+  }
+
+  .navLink {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    background: #2d4c68fb;
+    /* margin: auto; */
+    top: 0;
+    right: 0;
+    margin-top: -1200px;
+    transition: all 0.5s ease;
+    border-bottom-right-radius: 20rem;
+  }
+    .actives {
+    margin: 0 auto;
+  }
+      .manu-button{
+    display: block;
+    margin: 0;
+  }
+
+}
+/* ------------------------------footer------------- */
+.footer-tex{
+  width: 100%;
+  height: 10vh;
+  background: #1a2025;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  align-items: center;
+}
+.footer-tex p{
+  font-size: small;
+}
+/* --------------------hero------------------- */
+@media only screen and (max-width: 885px){
+  #simple{
+  margin: 5rem auto;
+}
+  .events-items{
+    flex-direction: column;
+  }
+  .events_imgs{
+    width: 400px;
+    margin: 0;
+  }
+  .events_text{
+    margin-bottom: 2rem;
+  }
+  .events_text p{
+  text-align: center;
+}
+}
+
+@media only screen and (max-width: 885px){
+  .banner_text h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 16pt;
+  }
+}
+
+@media only screen and (max-width: 885px){
+  #container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin: 6rem auto;
+}
+.col-one button{
+  margin-top: 1rem;
+}
+.col-two{
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.col-two div{
+  width: 300px;
+  height: 300px;
+}
+}
+
