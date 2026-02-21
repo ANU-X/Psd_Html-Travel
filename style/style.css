@@ -11,7 +11,7 @@
 #heros {
   width: 100%;
   height: 100vh;
-  background-image: url(img/hero.jpg);
+  background-image: url('/img/hero.webp');
   background-size: cover;
   background-position: bottom;
   display: flex;
@@ -23,7 +23,7 @@
 .hero-text h1 {
   margin-top: 3rem;
   margin-bottom: 0.6rem;
-  font-size: 26pt;
+  font-size: x-large;
 }
 .line {
   width: 7rem;
@@ -65,9 +65,8 @@
   font-size: 14pt;
   cursor: pointer;
 }
-.actives:hover {
-  color: #e70d56;
-}
+
+
 .navLink button {
   padding: 0.2rem 0.5rem;
   border-radius: 20px;
@@ -105,7 +104,7 @@
 }
 .events_upcoms h1{
   font-family: "Dancing Script", cursive;
-  font-size: 36pt;
+  font-size: xx-large;
 }
 .linesr{
   width: 10rem;
@@ -115,16 +114,13 @@
 }
 .events-items{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 2rem;
 }
-.events_imgs{
-  width: 500px;
-  height: 400px;
-  margin-bottom: 3rem;
-}
+
 .events_imgs img{
   transition: transform 6s;
 }
@@ -132,16 +128,18 @@
 .events-items img:hover{
   transform: scale(1.05);
 }
+
 .events_imgs img{
-  width: 100%;
+  width: 80%;
+}
+.events_text{
+  margin: 1rem auto;
 }
 .events_text h2{
-  margin-top: 10px;
-  margin-bottom: 1.5rem;
+  font-size: large;
 }
 .events_text p{
-  text-align: left;
-  margin-bottom: 2rem;
+  margin: 0.5rem auto;
 }
 .events_text button{
   padding:0.6rem 1rem;
@@ -176,7 +174,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/bg-2.jpg);
+  background-image: url('/img/bg-2.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -231,6 +229,9 @@
 .col-one p{
   margin: 1rem auto;
 }
+.col-one h1{
+  font-size: x-large;
+}
 .col-one button{
   padding: 0.5rem 1rem;
   border: 2px solid #e70d56;
@@ -267,103 +268,56 @@
   height: 100%;
   transition: 1s ease ;
 }
-
-/*---------------------------------------------------------------------------------------------------------------*/
-/* responsive */
-@media only screen and (max-width: 885px) {
-
-  .navbar h1 {
-    position: absolute;
-    top: 10px;
-    left: 12px;
-    font-size: x-large;
-  }
-
-  .navLink {
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    text-align: center;
-    background: #2d4c68fb;
-    /* margin: auto; */
-    top: 0;
-    right: 0;
-    margin-top: -1200px;
-    transition: all 0.5s ease;
-    border-bottom-right-radius: 20rem;
-  }
-    .actives {
-    margin: 0 auto;
-  }
-      .manu-button{
-    display: block;
-    margin: 0;
-  }
-
-}
 /* ------------------------------footer------------- */
-.footer-tex{
-  width: 100%;
-  height: 10vh;
-  background: #1a2025;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.5rem;
-  text-align: center;
-  align-items: center;
+.container_seven{
+    display: grid;
+    place-items: center;
+    background: #252525;
+    text-align:left;
+    gap: 2rem;
+    padding: 20px;
 }
-.footer-tex p{
-  font-size: small;
+.footer-text-one h2{
+    text-align: center;
 }
-/* --------------------hero------------------- */
-@media only screen and (max-width: 885px){
-  #simple{
-  margin: 5rem auto;
+.container_seven p{
+    color: #a7a6a6;
+    margin: 0.6rem auto;
 }
-  .events-items{
+
+.container_seven h2{
+    color: #f8f7f7;
+}
+
+.container_seven div i{
+    margin: 0.4rem 0.6rem;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+.footer-icons{
+    text-align: center;
+}
+
+.reserved{
+    display: flex;
     flex-direction: column;
-  }
-  .events_imgs{
-    width: 400px;
-    margin: 0;
-  }
-  .events_text{
-    margin-bottom: 2rem;
-  }
-  .events_text p{
-  text-align: center;
-}
+    background: #252525;
+    color: #ebe9e9;
+    justify-content: center;
+    align-items: center;
 }
 
-@media only screen and (max-width: 885px){
-  .banner_text h1{
-    font-family: "Dancing Script", cursive;
-    font-size: 16pt;
-  }
+.reserved hr{
+    width: 40rem;
 }
 
-@media only screen and (max-width: 885px){
-  #container{
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-  margin: 6rem auto;
-}
-.col-one button{
-  margin-top: 1rem;
-}
-.col-two{
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-.col-two div{
-  width: 300px;
-  height: 300px;
-}
+.reserved p{
+    margin: 18px auto;
+
 }
 
+.anu{
+    color: rgb(170, 27, 27);
+    cursor: pointer;
+}
