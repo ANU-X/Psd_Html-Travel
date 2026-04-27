@@ -17,8 +17,9 @@
     />
   </head>
   <body>
-    <nav class="navbar">
-      <h1>ADVENTURE</h1>
+    <nav id="navStiky" >
+      <div class="navbar">
+      <a href="" class="logo">ADVENTURE</a>
       <ul class="navLink">
         <li class="actives">Home</li>
         <li class="actives">Tours</li>
@@ -27,6 +28,7 @@
         <button class="actives">Contact</button>
       </ul>
       <img class="manu-button" src="img/manu-icon.svg" alt="imgs" />
+      </div>
     </nav>
 
     <header id="heros">
@@ -44,7 +46,7 @@
         <div class="linesr"></div>
       </div>
       <div class="events-items">
-        <div>
+        <div id="event_gsap">
           <div class="events_imgs">
             <img src="img/single-2.webp" alt="imgs" />
           </div>
@@ -57,7 +59,7 @@
             <button>Learn More</button>
           </div>
         </div>
-        <div>
+        <div id="upcomin_gsap">
           <div class="events_imgs">
             <img src="img/single-1.webp" alt="imgs" />
           </div>
@@ -106,16 +108,16 @@
           <button>Learn More</button>
         </div>
         <div class="col-two">
-          <div>
+          <div id="dis_gsap_one">
             <img src="img/img-1.webp" alt="img" />
           </div>
-          <div>
+          <div id="dis_gsap_two">
             <img src="img/img-2.webp" alt="img" />
           </div>
-          <div>
+          <div id="dis_gsap_thre">
             <img src="img/img-3.webp" alt="img" />
           </div>
-          <div>
+          <div id="dis_gsap_four">
             <img src="img/img-4.webp" alt="img" />
           </div>
         </div>
@@ -143,15 +145,14 @@
       </div>
       <div class="footer-icons">
         <h2>Follow Us</h2>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-square-x-twitter"></i>
-        <i class="fa-brands fa-square-instagram"></i>
-        <i class="fa-brands fa-square-linkedin"></i>        
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-square-linkedin"></i></a>        
       </div>
     </div>
     <div class="reserved">
-      <hr>
-    <p> © 2025 All Rights Reserved. Powered by <span class="anu"> aNu </span> </p>
+    <p> © 2025 All Rights Reserved. Powered by <a href="" class="anu"> aNu </a> </p>
     </div>
   </footer>
 
@@ -163,6 +164,14 @@
       manuBtn.addEventListener("click", () => {
         navLinks.classList.toggle("actives");
       });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./gsap.js">
+
     </script>
   </body>
 </html>
